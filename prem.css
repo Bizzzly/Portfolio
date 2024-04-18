@@ -1,0 +1,350 @@
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.792);
+    color: white;
+}
+
+
+
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(photos/prem.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 5px 10px;
+
+    margin: 0px 0px;
+    position: fixed;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: inline;
+    margin: 0px 65px;
+    color: white;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.437);
+}
+
+
+
+
+
+
+.home {
+    color: white;
+    margin: 230px 0px 0px 300px;
+    padding: 10px 10px;
+    display: inline-block;
+
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.834);
+    backdrop-filter: blur(10px);
+    color: red;
+}
+
+.home p {
+    text-decoration: underline;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+
+.About {
+    display: flex;
+
+}
+
+.About img {
+    box-shadow: 10px 15px rgba(27, 2, 2, 0.49);
+    background-color: rgba(40, 36, 36, 0.593);
+    margin: -20px 15px;
+}
+
+.About h2 {
+    font-size: 35px;
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 10px 10px;
+    font-family: sans-serif;
+}
+
+#abt div {
+
+    margin: 30px 0px 0px 0px;
+
+}
+
+#abt li {
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 0px;
+    padding: 0px 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#abt li:hover,
+#abt li .active {
+    text-decoration: underline;
+    color: red;
+    transition: 0.5s;
+}
+
+.About #rat li {
+    margin: 0px -50px;
+    cursor: default;
+    color: rgba(212, 14, 14, 0.851);
+    text-decoration: underline;
+    margin-top: -50px;
+
+}
+
+
+
+
+
+
+.skills {
+
+    display: none;
+    padding: 6px 47px;
+}
+#rat{
+    display:block;
+}
+
+
+.About #padhai li {
+
+    margin: 0px -50px;
+    cursor: default;
+    color: rgba(212, 14, 14, 0.851);
+    text-decoration: underline;
+    margin-top: -50px;
+}
+
+.Education {
+    display: none;
+
+    padding: 6px 47px;
+}
+
+.About #tajuraba li {
+
+    margin: 0px -50px;
+    cursor: default;
+    color: rgba(212, 14, 14, 0.851);
+    text-decoration: underline;
+    margin-top: -50px;
+}
+
+.Experience {
+
+    display: none;
+    padding: 6px 47px;
+}
+
+
+
+
+
+
+
+.Services h2 {
+    font-size: 35px;
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 45px 20px;
+    font-family: sans-serif;
+}
+
+.serv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin: -18px 44px;
+
+    padding: 10px 10px 10px 10px;
+}
+.serv a{
+    color:rgba(166, 108, 227, 0.603);
+}
+
+.serv div {
+    box-shadow: 10px 15px rgba(27, 2, 2, 0.49);
+    padding: 100px;
+    border-radius: 10px;
+    background-color: rgba(40, 36, 36, 0.593);
+    cursor: pointer;
+    transition: background-0.5s, transform 0.5s;
+}
+
+.serv h3 {
+    font-size: 30px;
+    color: black;
+}
+
+.serv div:hover {
+    background: #f04444ba;
+    transform: translateY(-10px);
+}
+
+.serv div a {
+    margin: 5px 0px;
+    color: white;
+}
+
+
+
+
+
+
+.mywork h2 {
+    font-size: 35px;
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 45px 20px;
+    font-family: sans-serif;
+}
+
+.works {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin: 0px 44px;
+    border-radius: 10px;
+}
+
+.app {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.app img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.6s;
+
+    border-radius: 10px;
+
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px 0px 0px;
+    text-align: center;
+    transition: height 0.5s;
+    border-radius: 10px;
+}
+.layer a img{
+height:30px;
+width:30px;
+background-color: white;
+}
+
+.layer h3 {
+    font-size: 30px;
+    color: black;
+}
+
+.app:hover img {
+    transform: scale(1.2);
+}
+
+.app:hover .layer {
+    height: 100%;
+
+}
+
+
+
+
+
+
+.Socialmedia {
+
+    margin: 7px 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    background-color: rgba(0, 0, 0, 0.768);
+
+
+}
+
+.Socialmedia p {
+    font-size: 30px;
+    color: rgb(177 167 167);
+    text-decoration: underline;
+}
+
+.media {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 10px;
+    margin-top: 20px;
+    margin-left: -8px;
+}
+
+.media img {
+    padding: 0px 20px 0px 0px;
+}
+
+.Socialmedia phone {
+    color: rgb(177 167 167);
+}
+
+.download {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    margin-top: 40px;
+    margin-right: 40px;
+
+}
+
+.download a {
+    cursor: pointer;
+}
+
+.download button {
+    background-color: rgb(3, 136, 193);
+    color: white;
+    padding: 12px 51px;
+    border-radius: 40px;
+    cursor: pointer;
+}

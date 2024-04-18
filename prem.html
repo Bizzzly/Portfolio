@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="prem.css">
+</head>
+
+<body>
+    <!---------1st page-->
+    <div class="container" id="dabba">
+        <div class="navigation">
+            <div class="logo">
+                <h2>My Portfolio</h2>
+            </div>
+            <div>
+                <a href="#ghar">Home</a>
+                <a href="#BAARE">About</a>
+                <a href="#serve">Services</a>
+                <a href="#my">My Work</a>
+                <a href="#medi">Social Media</a>
+
+            </div>
+        </div>
+        <div class="home" id="ghar">
+            <h3>Hi I am</h3>
+            <p> PREM JAGDISH GUJAR</p>
+            <h3>From Mumbai,India</h3>
+        </div>
+    </div>
+
+    <!--------2nd page--------------->
+
+    <div class="About" id="BAARE">
+
+        <img src="photos/prem.jpg">
+        <div id="abt">
+            <h2>About Me</h2>
+            <p>2nd year student from ssjc</p>
+            <li onclick="skil()">skill</li>
+            <li onclick="education()">education</li>
+            <li onclick="experienc()">experience</li>
+            <div id="rat" class="skills">
+                <li>Programmer</li>
+                <p>Beginner in Python ,c and C++</p>
+                <li>language</li>
+                <p>talktive in Hindi , English and marathi</p>
+            </div>
+            <div id="padhai" class="Education">
+                <li>B-tech</li>
+                <p>2nd year in Computer engineering</p>
+            </div>
+            <div id="tajuraba" class="Experience">
+
+                <li>Internships</li>
+                <p>6 month experienc in tcs  </p>
+            </div>
+        </div>
+    </div>
+
+    <!--------3rd page--------------->
+    <div class="Services" id="serve">
+        <h2>HOBBIES</h2>
+        <div class="serv">
+            <div>
+                <h3>VIDEO GAMING</h3>
+                <p>LIKE BGMI  LUDO,  COC and many more</p>
+
+            </div>
+            <div>
+                <h3>Short video</h3>
+                <p>making shoort films,reel etc</p>
+            </div>
+            <div>
+                <h3>Coder/ Programmer</h3>
+                <p>using c,c++ and python making game and apps</p>
+            </div>
+        </div>
+    </div>
+
+    <!--------4th page--------------->
+    <div class="mywork" id="my">
+        <h2>My Works</h2>
+        <div class="works">
+            <div class="app">
+                <img src="photos/work-1.png   ">
+                <div class="layer">
+                    <h3>WEBSITE</h3>
+                    <p>Sudoku online game site, Carshow website</p>
+                        <a href="#"><img src="photos/link.png" height="30px" width="30px"></a>
+                </div>
+            </div>
+            <div class="app">
+                <img src="photos/work-2.png    ">
+                <div class="layer">
+                    <h3>APPS</h3>
+                    <p>SNAKE GAME ,car game ,2d game </p>
+                        <a href="#"><img src="photos/link.png" height="30px" width="30px"></a>
+                </div>
+            </div>
+            <div class="app">
+                <img src="photos/work-3.png  ">
+                <div class="layer">
+                    <h3> WEB </h3>
+                    <p>making web sites click here to chek my project</p>
+                        <a href="#"><img src="photos/link.png" height="30px" width="30px"></a>
+                </div>
+            </div>
+        </div>
+
+
+ <div class="download">
+    <a href="my cv/skeleton.jpg" download><button>Download CV</button></a>
+ </div>
+
+
+ <!--------5th page--------------->
+ <div class="Socialmedia" id="medi">
+    <p>Contacts</p>
+    <div class="media">
+        <div class="link">
+          <a href="www.instagram.com"><img src="photos/instagram.png" height="30px" width="30px" ></a>
+        </div>
+        <div class="link">
+           <a href="www.facebook.com"> <img src="photos/facebook.png" height="30px" width="30px"></a>
+        </div>
+        <div class="link">
+           <a href="www.twitter.com"><img src="photos/twitter (1).png"height="30px" width="30px" ></a>
+        </div>
+        <div class="link">
+          <a href="www.whatsapp.com">  <img src="photos/whatsapp.png" height="30px" width="30px"></a>
+        </div>
+    </div>
+    Phone = <phone>+91 82825656</phone>
+</div>
+        
+        
+
+
+
+
+        <script>
+            function skil() {
+                let skills = document.querySelector('.skills')
+                skills.style.display = 'block';
+                let Education = document.querySelector('.Education')
+                Education.style.display = 'none';
+                let Experience = document.querySelector('.Experience')
+                Experience.style.display = 'none';
+
+
+            }
+            function education() {
+
+                let Education = document.querySelector('.Education')
+                Education.style.display = 'block';
+                let skills = document.querySelector('.skills')
+                skills.style.display = 'none';
+                let Experience = document.querySelector('.Experience')
+                Experience.style.display = 'none';
+            }
+            function experienc() {
+
+                let Experience = document.querySelector('.Experience')
+                Experience.style.display = 'block';
+                let skills = document.querySelector('.skills')
+                skills.style.display = 'none';
+                let Education = document.querySelector('.Education')
+                Education.style.display = 'none';
+
+            }
+
+
+        </script>
+
+</body>
+
+</html>
